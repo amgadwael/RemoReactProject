@@ -4,19 +4,19 @@ import ProductCard from "./ProductCard";
 function Products() {
   return (
     <section
-      id="products"
-      className="py-20 bg-[#faf7f3]"
-      dir="rtl"
-    >
+  id="products"
+  className="py-24 bg-white"
+  dir="rtl"
+>
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-10">
-          <p className="text-[#9b6d48] font-medium">
-            منتجاتنا
-          </p>
+         <p className="text-[#c68d43] font-semibold">
+  منتجات أبو رماح
+</p>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1c120d] mt-2">
-            اختار القهوة المناسبة ليك
-          </h2>
+<h2 className="text-3xl md:text-4xl font-bold text-black mt-2">
+  اختار قهوتك
+</h2>
 
           <p className="text-gray-600 mt-3">
             مجموعة من حبوب القهوة بدرجات تحميص مختلفة.

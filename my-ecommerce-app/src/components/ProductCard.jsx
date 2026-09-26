@@ -7,7 +7,7 @@ function ProductCard({
 }) {
   return (
     <div
-      className="bg-white rounded-2xl overflow-hidden border border-[#e7ddd3] shadow-sm hover:shadow-md transition"
+      className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg transition duration-300"
       dir="rtl"
     >
       <img
@@ -17,24 +17,24 @@ function ProductCard({
       />
 
       <div className="p-5">
-        <p className="text-sm text-[#9b6d48] mb-2">
+        <p className="text-sm text-[#c68d43] font-medium">
           {category}
         </p>
 
-        <h3 className="text-xl font-bold text-[#1c120d]">
+        <h3 className="text-xl font-bold text-black mt-2">
           {name}
         </h3>
 
-        <p className="text-gray-600 mt-3 leading-7 text-sm">
+        <p className="text-gray-600 text-sm leading-7 mt-3">
           {description}
         </p>
 
-        <div className="flex items-center justify-between mt-5">
-          <span className="text-xl font-bold text-[#1c120d]">
+        <div className="flex items-center justify-between mt-6">
+          <span className="text-xl font-bold">
             {price} جنيه
           </span>
 
-          <button className="bg-[#1c120d] text-white px-4 py-2 rounded-lg hover:bg-[#3a281f] transition">
+          <button className="bg-black text-white px-5 py-2.5 rounded-lg hover:bg-[#c68d43] transition">
             أضف للسلة
           </button>
         </div>

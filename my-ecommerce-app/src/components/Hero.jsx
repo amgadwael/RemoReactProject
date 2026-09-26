@@ -1,40 +1,41 @@
 function Hero() {
   return (
-    <section id="home" className="bg-[#f5eee6]">
-      <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center min-h-[600px]">
-        
-        <div className="text-right" dir="rtl">
-          <p className="text-[#a46f42] font-medium mb-3">
-            حبوب قهوة مختارة بعناية
+    <section id="home" className="bg-white">
+      <div
+        className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-14 items-center min-h-[620px]"
+        dir="rtl"
+      >
+        <div>
+          <p className="text-[#c68d43] font-semibold mb-3">
+            أبو رمح للقهوة
           </p>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-[#1c120d] leading-tight">
-            قهوتك تبدأ
+          <h1 className="text-4xl md:text-6xl font-bold text-black leading-tight">
+            قهوة بطعم
             <br />
-            من حبة كويسة
+            تعرفه من أول فنجان
           </h1>
 
-          <p className="text-[#66554b] mt-6 text-lg max-w-lg leading-8 mr-0 ml-auto">
-            في TORKY Cafe بنختار حبوب القهوة من مصادر مختلفة،
-            ونقدم لك درجات تحميص تناسب ذوقك وطريقة تحضيرك.
+          <p className="text-gray-600 mt-6 text-lg leading-8 max-w-lg">
+            مجموعة مختارة من حبوب القهوة بدرجات تحميص مختلفة،
+            مناسبة للإسبريسو والقهوة اليومية وكل ذوق له اختياره.
           </p>
 
           <a
             href="#products"
-            className="inline-block mt-8 bg-[#1c120d] text-white px-7 py-3 rounded-md hover:bg-[#3a281f] transition"
+            className="inline-block mt-8 bg-black text-white px-8 py-3 rounded-lg hover:bg-[#c68d43] transition"
           >
-            شوف المنتجات
+            تصفح المنتجات
           </a>
         </div>
 
-        <div>
+        <div className="bg-[#faf7ef] rounded-3xl p-4">
           <img
-            src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1000&q=80"
-            alt="حبوب قهوة"
+            src="https://scontent-hbe1-1.xx.fbcdn.net/v/t39.30808-6/642268969_122250679874174179_799212338198519172_n.jpg?stp=c0.169.1536.1536a_dst-jpg_tt6&cstp=mx1536x1536&ctp=s206x206&_nc_cat=110&ccb=1-7&_nc_sid=50ad20&_nc_ohc=fW1bku9YcZcQ7kNvwG9UYQw&_nc_oc=AdrZFZ7HAlLIS6idFQ4rHL4Nj4OALyTNjiNbNvazh0KYPEHlrYiMm9J3HTpbwoEsSG0&_nc_zt=23&_nc_ht=scontent-hbe1-1.xx&_nc_gid=pvJr_RrEuMW5QEPYjuM3xg&_nc_ss=732a8&oh=00_AQK_8FPWuzo2-sbghFR2oes2VvFsQoq4wBhoUrtDRlpDzw&oe=6ABDAA07"
+            alt="حبوب قهوة أبو رمح"
             className="w-full h-[430px] object-cover rounded-2xl"
           />
         </div>
-
       </div>
     </section>
   );

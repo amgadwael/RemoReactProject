@@ -1,67 +1,124 @@
+import logo from "../assets/abo-romaa-logo.png";
+
 function Footer() {
   return (
-    <footer className="bg-[#1c120d] text-white pt-16" dir="rtl">
-      <div className="max-w-7xl mx-auto px-6">
-        
-        <div className="grid md:grid-cols-3 gap-10 pb-12">
-          
-          <div>
-            <h2 className="text-3xl font-bold">
-              TORKY <span className="text-[#c89b6d]">Cafe</span>
-            </h2>
+    <footer className="bg-black text-white pt-16" dir="rtl">
 
-            <p className="text-gray-400 leading-7 mt-4 max-w-sm">
-              متجر تجريبي لعرض حبوب القهوة ودرجات التحميص المختلفة.
-              تم إنشاء المشروع كتطبيق تدريبي باستخدام React و Tailwind CSS.
+      <div className="max-w-7xl mx-auto px-6">
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 pb-14">
+
+          {/* Brand */}
+          <div>
+            <div className="flex items-center gap-4">
+              <div className="bg-white rounded-xl p-1">
+                <img
+                  src={logo}
+                  alt="أبو رمح"
+                  className="w-20 h-20 object-contain rounded-lg"
+                />
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-bold">
+                  أبو رمح
+                </h2>
+
+                <p className="text-xs tracking-[3px] text-gray-400 mt-1">
+                  ABO ROMAAH
+                </p>
+              </div>
+            </div>
+
+            <p className="text-gray-400 leading-7 mt-5 text-sm">
+              متجر لعرض أنواع مختلفة من حبوب القهوة
+              ودرجات التحميص بطريقة بسيطة وسهلة.
             </p>
 
-            <div className="mt-6">
-              <span className="inline-block bg-[#c89b6d] text-[#1c120d] px-4 py-2 rounded-full text-sm font-semibold">
-                مشروع تجريبي
-              </span>
-            </div>
+            <span className="inline-block mt-5 bg-white/10 border border-white/10 px-4 py-2 rounded-full text-xs text-gray-300">
+              مشروع تدريبي تجريبي
+            </span>
           </div>
 
+          {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-[#c89b6d]">
+            <h3 className="font-bold text-lg mb-5">
               روابط سريعة
             </h3>
 
-            <div className="flex flex-col gap-3 text-gray-300">
-              <a href="#home" className="hover:text-white transition">
+            <div className="flex flex-col items-start gap-3 text-gray-400 text-sm">
+              <a
+                href="#home"
+                className="hover:text-[#c49358] transition"
+              >
                 الرئيسية
               </a>
 
-              <a href="#products" className="hover:text-white transition">
+              <a
+                href="#products"
+                className="hover:text-[#c49358] transition"
+              >
                 المنتجات
               </a>
 
-              <a href="#about" className="hover:text-white transition">
+              <a
+                href="#about"
+                className="hover:text-[#c49358] transition"
+              >
                 من نحن
               </a>
 
-              <a href="#contact" className="hover:text-white transition">
+              <a
+                href="#contact"
+                className="hover:text-[#c49358] transition"
+              >
                 تواصل معنا
               </a>
             </div>
           </div>
 
+          {/* Brand */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 text-[#c89b6d]">
-              تواصل معي
+            <h3 className="font-bold text-lg mb-5">
+              أبو رمح
             </h3>
 
-            <p className="text-gray-400 mb-5">
-              روابط التواصل والحسابات الشخصية
+            <div className="flex flex-col items-start gap-3 text-gray-400 text-sm">
+              <p>حبوب قهوة</p>
+              <p>درجات تحميص مختلفة</p>
+
+              <a
+                href="https://www.facebook.com/profile.php?id=61555225393821"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 text-white border border-gray-700 px-4 py-2 rounded-lg hover:bg-white hover:text-black transition"
+              >
+                صفحة أبو رمح على Facebook
+              </a>
+            </div>
+          </div>
+
+          {/* Developer */}
+          <div>
+            <h3 className="font-bold text-lg mb-5">
+              مطور المشروع
+            </h3>
+
+            <p className="text-gray-400 text-sm leading-7">
+              تصميم وتطوير
             </p>
 
-            <div className="flex flex-wrap gap-3">
-              
+            <h4 className="font-bold text-xl mt-1">
+              Amgad Torky
+            </h4>
+
+            <div className="flex flex-wrap gap-2 mt-5">
+
               <a
                 href="https://www.linkedin.com/in/amgad-torky-75202005torky"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-[#c89b6d] hover:text-[#1c120d] px-4 py-2 rounded-lg transition"
+                className="border border-gray-700 px-4 py-2 rounded-lg text-sm hover:bg-white hover:text-black transition"
               >
                 LinkedIn
               </a>
@@ -70,7 +127,7 @@ function Footer() {
                 href="https://wa.me/201050049085"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-[#c89b6d] hover:text-[#1c120d] px-4 py-2 rounded-lg transition"
+                className="border border-gray-700 px-4 py-2 rounded-lg text-sm hover:bg-white hover:text-black transition"
               >
                 WhatsApp
               </a>
@@ -79,7 +136,7 @@ function Footer() {
                 href="https://www.instagram.com/amgad.t_official/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-[#c89b6d] hover:text-[#1c120d] px-4 py-2 rounded-lg transition"
+                className="border border-gray-700 px-4 py-2 rounded-lg text-sm hover:bg-white hover:text-black transition"
               >
                 Instagram
               </a>
@@ -88,49 +145,52 @@ function Footer() {
                 href="https://mostaql.com/u/Amgad_Torky"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-[#c89b6d] hover:text-[#1c120d] px-4 py-2 rounded-lg transition"
+                className="border border-gray-700 px-4 py-2 rounded-lg text-sm hover:bg-white hover:text-black transition"
               >
                 مستقل
               </a>
 
-                <a
-                href="https://github.com/amgadwael"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-[#c89b6d] hover:text-[#1c120d] px-4 py-2 rounded-lg transition"
-              >
-                GitHub
-              </a>
-
             </div>
           </div>
+
         </div>
+
       </div>
 
-      <div className="border-t border-white/10 bg-[#160d09]">
-        <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col items-center gap-3 text-center">
-          
-          <div className="text-sm text-gray-400 flex items-center gap-2">
+      {/* Bottom Footer */}
+      <div className="border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-6 py-7 flex flex-col items-center gap-3 text-center">
+
+          <p className="text-gray-500 text-xs max-w-2xl leading-6">
+            هذا الموقع مشروع تدريبي تجريبي تم إنشاؤه لأغراض التعلم
+            والتطبيق على React و Tailwind CSS، وليس متجرًا إلكترونيًا
+            رسميًا للبيع عبر الإنترنت.
+          </p>
+
+          <div className="flex items-center gap-2 text-sm text-gray-400">
             <span>Powered by</span>
 
             <a
               href="https://amg8d.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-fuchsia-500 border-b border-dotted border-purple-500 pb-0.5"
+              className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-fuchsia-500 border-b border-dotted border-purple-500"
             >
               amgad
             </a>
 
-            <span className="text-xs">{"</>"}</span>
+            <span className="text-xs font-mono">
+              {"</>"}
+            </span>
           </div>
 
-          <p className="text-gray-500 text-sm">
-            © 2026 TORKY Cafe — Demo Project. All rights reserved.
+          <p className="text-gray-600 text-xs">
+            © 2026 ABO ROMAAH — Demo Project
           </p>
 
         </div>
       </div>
+
     </footer>
   );
 }
